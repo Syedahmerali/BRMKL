@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 12</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+
+<nav class="flex w-screen justify-between items-centre mt-4 px-3 fixed bg-yellow-400">
+    <img class="w-16" src="https://www.4shared.com/img/b6zajq2Zge/s25/18ee3ea35a8/logo" alt="...">
+    <ul class="flex gap-6">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a>
+            <div class="relative inline-block aria-hidden text-left">
+                <div>
+                
+                </div>
+              
+                <!--
+                  Dropdown menu, show/hide based on menu state.
+              
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-green-500 rounded-md bg-yellow-500 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div class="py-1" role="none">
+                    <a href="#" class="text-black-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">www.7starHD.com</a></div>
+                    <div class="py-1" role="none">
+                    <a href="#" class="text-black-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">www.Tamilrockers.com</a></div>
+                    <div class="py-1" role="none">
+                    <a href="#" class="text-black-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">www.iwannawatch.com</a></div>
+                    <div class="py-1" role="none">
+                    <a href="#" class="text-black-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">www.7movierulz.rip</a></div>
+              </div>
+              </li>
+        <li><a href="#">Contacts Us</a></li>
+        <li><a href="#">Portfolio</a></li>
+    </ul>
+    <button class="p-3 rounded-full bg-green-400">Login</button>
+    </nav>
+<div class="flex flex-wrap justify-center items-center min-h-screen bg-green-300">
+    <div class="h-64 w-80 bg-indigo-500 relative rounded-xl m-5">
+        <div class="h-8 w-8 bg-yellow-400 absolute top-0 right-0"></div>
+    </div>
+    <div class="h-64 w-80 bg-indigo-500 rounded-xl m-5 sticky"></div>
+    <div class="h-64 w-80 bg-indigo-500 rounded-xl m-5"></div>
+    <div class="h-64 w-80 bg-indigo-500 rounded-xl m-5"></div>
+    <div class="h-64 w-80 bg-indigo-500 rounded-xl m-5 static"></div>
+    <div class="h-64 w-80 bg-indigo-500 rounded-xl m-5"></div>
+    <div class="h-64 w-80 bg-indigo-500 rounded-xl m-5"></div>
+</div>
+</body>
+</html>
