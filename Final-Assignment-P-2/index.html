@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Assignment-2</title>
+</head>
+<body>
+    <h1>Final Assignment-2</h1>
+
+    <form>
+        <input type="text">
+        <input type="button" value="Check" 
+        onclick="isEvenorOdd (this.form);">
+        </form>
+        <div id="result"></div>
+
+    <script src="index.js"></script>
+<script>
+console.log("1. can Vote")
+
+        function validate(age){
+            var ans="not eigible";
+            if(age>=18){
+                ans="eligible";
+            }
+            return(ans);
+        }
+        
+        var age=parseInt(prompt("Enter age"));
+        var status=validate(age);
+        document.write("You are <b>"+status+"</b> for Vote");
+
+
+console.log("2. Max of Two");
+
+
+function maxOfTwo(a, b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+console.log(maxOfTwo(10, 20));
+console.log(maxOfTwo(20, 10));
+console.log(maxOfTwo(10, 10));
+
+
+console.log("3. is Even or Odd")
+
+function isEvenorOdd(num, form) {
+    if (num % 2 == 0) {
+        document.getElementById('result').innerHTML = `${num} is a Even number`
+        console.log(`${num} is a Even number`)
+    }
+    else {
+        document.getElementById('result').innerHTML = `${num} is a Odd number`
+        console.log(`${num} is a Odd number`)
+    }
+}
+
+
+console.log("4. get Grade")
+
+function grade(score){
+  
+    if(score == 100 || score >=90 )
+    {
+      return 'you got an A';
+    }
+    else if(score >= 80 && score <= 89 )
+    {
+      return 'you got a B';
+    }
+    else if(grade >= 70 && grade <= 79 )
+    {
+      return 'you got a C';
+    }
+    else if(score >=59 && score <= 69 )
+    {
+      return 'You got a D';
+    }
+    else
+    {
+      return 'you got a F';
+    }
+    
+}
+
+console.log(grade(65));
+
+
+console.log("5. Greet")
+
+function greet(name) {
+    return `Assalam O Alaikum Rehmatullahi Wa-Barkatu, ${name}!`;
+}
+
+console.log(greet("Zahoor Sir"));
+console.log(greet("Fasih Ul Hassan"));
+
+
+console.log("6. Square")
+
+function square(num) {
+    return num * num;
+}
+
+console.log(square(5));
+console.log(square(10));
+
+
+console.log("7. Celsius to Fahrenheit")
+
+function celsiusToFahrenheit(celsius) {
+    return (Farenheit = celsius*9/5) + 32;
+}
+
+const celsiusTemperature = 25;
+const fahrenheitTemperature = celsiusToFahrenheit(celsiusTemperature);
+console.log(`${celsiusTemperature}°C is equal to ${fahrenheitTemperature}°F.`);
+
+
+console.log("8. is Positive")
+
+function isPositive(num) {
+  return num >= 0;
+}
+
+var num;
+while (true) {
+  num = prompt("Enter a number");
+  if (num === null) {
+    alert("No number entered. Try again.");
+    continue;
+  }
+
+  num = parseInt(num, 10);
+  if (isNaN(num)) {
+    alert("Invalid number entered. Try again.");
+    continue;
+  }
+
+  break;
+}
+alert(isPositive(num));
+
+
+console.log("9. Object of Pateint Data")
+
+const patient = {
+    name: "S.Ahmer Ali",
+    age: 34,
+    gender: "Male",
+    diagnosis: "Dengue",
+    condition: "Not Ok"
+};
+
+console.log(patient);
+
+
+console.log("10. Object of a Student")
+
+const student = {
+    name: "Faheem",
+    age: 20,
+    major: "Mathmatics",
+    university: "university of Punjab",
+    gpa: 3.8
+};
+
+console.log(student);
+</script>
+
+</body>
+
+</html>
